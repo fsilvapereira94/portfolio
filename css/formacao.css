@@ -35,7 +35,7 @@
     margin-left: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(/assets/img/icon/zoom.png);
+    background-image: url('../assets/img/icon/zoom.png');
 }
 .education a:hover{
     text-decoration: underline;
