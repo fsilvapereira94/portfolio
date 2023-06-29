@@ -38,7 +38,7 @@
     cursor: pointer;
 }
 
-.trigger::after{
+.acordeon .trigger::after{
     content:"";
     display: inline-block;
     width: 2rem;
