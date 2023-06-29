@@ -1,0 +1,7 @@
+.experience li{
+   list-style: none;
+}
+.experience h3{
+   display:inline-block;
+   text-align: justify;
+}

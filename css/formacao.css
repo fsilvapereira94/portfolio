@@ -1,0 +1,44 @@
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.education li{
+    padding: 0 1rem;
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.education h3::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 0.75rem;
+    margin-right: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/img/icon/check.png);
+}
+.education a{
+    text-decoration: none;
+    color: #ffff;
+}
+.education a::after{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 0.75rem;
+    margin-left: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/img/icon/zoom.png);
+}
+.education a:hover{
+    text-decoration: underline;
+}
+
+

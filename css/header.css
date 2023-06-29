@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(-60deg, rgba(0,0,0,1) 11%, #3a0101 50%, rgba(0,0,0,1) 79%);
+    color: #fff;
+    background-size: 400% 400%;
+    animation: linearGradient 10s ease infinite alternate-reverse;
+}
+
+.main {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1.5rem;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.title {
+    text-align: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.information p {
+    margin: 0.5rem;
+}
+.information .people::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 0.75rem;
+    margin-right: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/img/icon/people.png);
+}
+.information .map::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 0.75rem;
+    margin-right: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/img/icon/map.png);
+}
+.information .fone::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 0.75rem;
+    margin-right: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/img/icon/whatsapp.png);
+}
+.information .email::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 0.75rem;
+    margin-right: 0.25rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/img/icon/email.png);
+}
+
+.information a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.information a:hover {
+    text-decoration: underline;
+}
+
+@keyframes linearGradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    25%{
+        background-position: 50% 100%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+
+    .header {
+        display: grid;
+        grid-template-areas:
+            " photo  title title "
+            " photo  information information "
+        ;
+        column-gap: 30%;
+    }
+
+    .photo {
+        grid-area: photo;
+    }
+
+    .title {
+        grid-area: title;
+        text-align: justify;
+    }
+
+    .information {
+        grid-area: information;
+    }
+}
+;
